@@ -105,3 +105,7 @@ As thanks for creating this product, we'd be grateful if you add it in a promine
 [bundle-size-img]: https://badgen.net/bundlephobia/minzip/lightweight-charts
 [deps-count-img]: https://img.shields.io/badge/dynamic/json.svg?label=dependecies&color=brightgreen&query=$.dependencyCount&uri=https%3A%2F%2Fbundlephobia.com%2Fapi%2Fsize%3Fpackage%3Dlightweight-charts
 [bundle-size-link]: https://bundlephobia.com/result?p=lightweight-charts
+
+---
+
+# v3.9.0
