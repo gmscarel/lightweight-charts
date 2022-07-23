@@ -109,6 +109,6 @@
     "verify": "npm-run-all clean -p lint check-markdown-links build:prod -p check-dts-docs tsc-verify test size-limit",
     "test": "mocha tests/unittests/**/*.spec.ts",
     "copy": "cp dist/lightweight-charts.standalone.production.js html/assets/lightweight-charts.standalone.production.js",
-    "serve": "brave html/index.html"
+    "serve": "sh scripts/serve.sh"
   }
 }

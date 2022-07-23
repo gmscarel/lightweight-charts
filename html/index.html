@@ -22,6 +22,34 @@
         var data = generateBarsData(period);
         candleSeries.setData(data);
 
+        const priceLine = candleSeries.createPriceLine({
+            price: 100.0,
+            color: 'blue',
+            lineWidth: 2,
+            lineStyle: LightweightCharts.LineStyle.Dotted,
+            axisLabelVisible: true,
+            title: 'P/L 500',
+        });
+
+        candleSeries.setMarkers([
+        {
+            id: 'prueba',
+            time: '2018-12-15',
+            position: 'aboveBar',
+            color: 'black',
+            shape: 'arrowDown',
+        }
+        ]);
+
+        chart.subscribeClick(function(param) {
+            // console.log('click');
+            console.log(param);
+        });
+        chart.subscribeCrosshairMove(function(param) {
+            // console.log('crosshairMove');
+            // console.log(param.hoveredMarkerId);
+        });
+
         var timeScale = chart.timeScale();
 
         var timer = null;
